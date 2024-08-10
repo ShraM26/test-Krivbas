@@ -1,0 +1,86 @@
+/* Определение переменных для цветов */
+:root {
+  --red-color: #FF0000;
+  --black-color: #000000;
+  --white-color: #FFFFFF;
+}
+
+/* Общие стили для сайта */
+body {
+  font-family: Arial, sans-serif;
+  background-color: var(--white-color);
+  color: var(--black-color);
+  margin: 0;
+  padding: 0;
+}
+
+/* Стили для заголовков */
+h1, h2, h3 {
+  color: var(--red-color);
+  text-align: center;
+}
+
+/* Стили для кнопок */
+button {
+  background-color: var(--red-color);
+  color: var(--white-color);
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+button:hover {
+  background-color: var(--black-color);
+  color: var(--white-color);
+}
+
+/* Стили для ссылок */
+a {
+  color: var(--red-color);
+  text-decoration: none;
+}
+
+a:hover {
+  color: var(--black-color);
+  text-decoration: underline;
+}
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+th,
+td {
+  border: 1px solid #ddd;
+  padding: 8px;
+  text-align: center;
+}
+
+th {
+  background-color: #f4f4f4;
+}
+
+button {
+  margin: 2px;
+  padding: 4px 8px;
+  border: none;
+  cursor: pointer;
+}
+
+button.active {
+  background-color: #4caf50;
+  /* Зеленый для присутствия */
+  color: white;
+}
+
+button:not(.active) {
+  background-color: #f44336;
+  /* Красный для отсутствия */
+  color: white;
+}
+
+button:hover {
+  opacity: 0.8;
+}
